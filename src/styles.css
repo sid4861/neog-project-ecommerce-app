@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Yellowtail&display=swap");
+
+/* font-family: 'Yellowtail', cursive; */
+
+.about-section {
+  width: 40%;
+  grid-area: about-section;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  position: relative;
+  left: 264px;
+}
+
+.categories-section {
+  width: 40%;
+  grid-area: categories-section;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  position: relative;
+  left: 264px;
+}
+
+.category-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  padding: 12rem;
+  grid-area: books-page;
+}
+
+.title {
+  position: relative;
+  left: 264px;
+  margin-top: 2rem;
+}
+
+.cart-items {
+  grid-area: cart-items;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.wishlist-items {
+  grid-area: wishlist-items;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.cart-item-price-remove {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-item-image {
+  width: 16%;
+  height: auto;
+}
+
+.cart-item-title-author {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  position: relative;
+  left: 1rem;
+}
+/* media query */
+.cart-amount {
+  grid-area: cart-amount;
+}
+.category-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffeb40;
+  padding: 4rem;
+  color: #fb0066;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .about-section {
+    width: 70%;
+    grid-area: about-section;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    position: relative;
+    left: 32px;
+  }
+
+  .categories-section {
+    width: 70%;
+    grid-area: categories-section;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    position: relative;
+    left: 32px;
+  }
+
+  .category-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .books-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    padding: 2rem;
+    grid-area: books-page;
+  }
+
+  .title {
+    position: relative;
+    left: 32px;
+  }
+
+  .cart-items {
+    grid-area: cart-items;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wishlist-items {
+    grid-area: wishlist-items;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    /* margin: auto; */
+    padding: 1rem;
+  }
+
+  .cart-item-price-remove {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cart-item-image {
+    width: 72%;
+    height: auto;
+    margin: auto;
+  }
+
+  .cart-item-title-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    position: relative;
+    left: 0rem;
+  }
+
+  .site-layout {
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "navigation navigation navigation" "about-section about-section about-section" "categories-section categories-section categories-section" "books-page books-page books-page";
+  }
+}
+
+.site-layout {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "navigation navigation navigation" "about-section about-section about-section" "categories-section categories-section categories-section" "books-page books-page books-page" "cart-items cart-items cart-items" "cart-amount cart-amount cart-amount" "wishlist-items wishlist-items wishlist-items";
+  background-color: #fffefa;
+}
+
+.navigation-h1 {
+  font-family: "Yellowtail", cursive;
+}
