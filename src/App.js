@@ -6,6 +6,7 @@ import BooksPage from "./Components/BooksPage/booksPage";
 import Cart from "./Components/Cart/cart";
 import WishList from "./Components/wishlist/wishlist";
 
+//app component
 export default function App() {
   const { route } = useRoute();
   return (
